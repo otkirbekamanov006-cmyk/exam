@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const fs = require('fs/promises');
 const path = require('path');
 
@@ -23,3 +24,19 @@ const deleteUploadedFiles = (req) => {
 };
 
 module.exports = { deleteFiles, deleteUploadedFiles, UPLOAD_DIR };
+=======
+const fs = require('fs');
+const path = require('path');
+
+const deleteFiles = (files) => {
+  if (!files || !files.length) return;
+  files.forEach((file) => {
+    const filePath = path.join(__dirname, '../../uploads', file.filename || file);
+    if (fs.existsSync(filePath)) {
+      fs.unlinkSync(filePath);
+    }
+  });
+};
+
+module.exports = deleteFiles;
+>>>>>>> 76df369 (faylni ozgartrdim)

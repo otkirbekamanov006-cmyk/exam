@@ -1,6 +1,12 @@
 node_modules/
+<<<<<<< HEAD
 .env
 uploads/*
 !uploads/.gitkeep
 *.log
 .DS_Store
+=======
+uploads/
+.env
+*.log
+>>>>>>> 76df369 (faylni ozgartrdim)

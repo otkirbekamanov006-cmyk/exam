@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 // Biznes mantiqidagi xatolarni HTTP holat kodi bilan qaytarish uchun maxsus klass.
 class ApiError extends Error {
   constructor(statusCode, message, errors) {
+=======
+class ApiError extends Error {
+  constructor(statusCode, message, errors = []) {
+>>>>>>> 76df369 (faylni ozgartrdim)
     super(message);
     this.statusCode = statusCode;
     this.errors = errors;
   }
+<<<<<<< HEAD
 
   static badRequest(message, errors) { return new ApiError(400, message, errors); }
   static unauthorized(message = 'Avtorizatsiyadan o\'tilmagan') { return new ApiError(401, message); }
@@ -15,3 +21,8 @@ class ApiError extends Error {
 }
 
 module.exports = ApiError;
+=======
+}
+
+module.exports = ApiError;
+>>>>>>> 76df369 (faylni ozgartrdim)

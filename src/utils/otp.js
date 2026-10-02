@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const crypto = require('crypto');
 
 const OTP_TTL_MINUTES = 5;
@@ -7,3 +8,10 @@ const RESEND_COOLDOWN_SECONDS = 60;
 const generateOtp = () => String(crypto.randomInt(100000, 1000000));
 
 module.exports = { generateOtp, OTP_TTL_MINUTES, RESEND_COOLDOWN_SECONDS };
+=======
+const generateOTP = () => {
+  return Math.floor(100000 + Math.random() * 900000).toString();
+};
+
+module.exports = { generateOTP };
+>>>>>>> 76df369 (faylni ozgartrdim)
