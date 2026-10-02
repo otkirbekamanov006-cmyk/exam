@@ -244,3 +244,6 @@ Keyin ikkala tomonga qarshi tomonning ismi va telefoni yuboriladi.
 
 ## 🧪 Postman
 `postman/Topildi.postman_collection.json` faylini import qiling. Login so‘rovlari tokenni o‘zi saqlaydi: `token` (Aziz), `token2` (Dilnoza), `adminToken`.
+## Lokal ilova nusxasi
+
+Kompyuterdagi yangilangan ilova mavjud fayllarni almashtirmaslik uchun [`topildi-local/`](./topildi-local/) papkasiga joylangan. Ishga tushirish ko'rsatmalari papka ichidagi README faylida.
