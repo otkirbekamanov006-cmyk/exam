@@ -247,3 +247,5 @@ Keyin ikkala tomonga qarshi tomonning ismi va telefoni yuboriladi.
 ## Lokal ilova nusxasi
 
 Kompyuterdagi yangilangan ilova mavjud fayllarni almashtirmaslik uchun [`topildi-local/`](./topildi-local/) papkasiga joylangan. Ishga tushirish ko'rsatmalari papka ichidagi README faylida.
+
+Maxfiy `.env` sozlamalari va foydalanuvchilar yuklagan rasmlar GitHub'ga kiritilmagan.
