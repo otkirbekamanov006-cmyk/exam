@@ -1,0 +1,35 @@
+{
+  "name": "topildi-api",
+  "version": "1.0.0",
+  "description": "Topildi — yo'qolgan va topilgan buyumlar platformasi uchun REST API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:schema": "node db/run.js schema",
+    "db:seed": "node db/run.js seed",
+    "db:setup": "node db/run.js schema && node db/run.js seed"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["express", "postgresql", "lost-and-found"],
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^6.10.1",
+    "pg": "^8.13.3",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
